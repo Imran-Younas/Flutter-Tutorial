@@ -1,0 +1,37 @@
+import 'package:flutter/material.dart'; // import pkges for excutation
+void main(){
+  runApp(new MyApp());  // craete class name here e.g: MyApp
+}
+
+class MyApp extends StatelessWidget {             // stateless wedigets
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      title: "My App",
+      home: Homepage(),
+    );
+  }
+}
+
+class Homepage extends StatefulWidget {     //statefull wedigets
+  const Homepage({Key? key}) : super(key: key);
+
+  @override
+  _HomepageState createState() => _HomepageState();
+}
+
+class _HomepageState extends State<Homepage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("My HomePage"),
+      ),
+      body: const Center(child: Text("Hi its my First App"),),
+    );
+  }
+}
+
+

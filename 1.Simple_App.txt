@@ -1,0 +1,4 @@
+import 'package:flutter/material.dart'; // import pkges for excutation
+void main(){
+  runApp(const MaterialApp(home: Text("Hello_Imran_My-1st_app"))); // add weidge
+}

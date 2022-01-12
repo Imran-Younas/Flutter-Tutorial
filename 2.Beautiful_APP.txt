@@ -1,0 +1,24 @@
+import 'dart:html';
+
+import 'package:flutter/material.dart'; // import pkges for excutation
+void main(){
+  runApp(new MyApp());  // craete class name here e.g: MyApp
+}
+
+
+class MyApp extends StatelessWidget {  // it's a stless i mean it can't change further, (type stless, will see all wedgits)
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp( // return MatrialApp
+      title: "My App", // press ctrl + spaceBar to see App wedigets
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("Home page"),
+        ),
+        body: const Center(child: Text("Hello World"),),
+      ),
+    );
+  }
+}
